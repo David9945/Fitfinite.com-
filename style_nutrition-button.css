@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.heading-website {
+    font-family: "Merriweather", sans-serif;
+    background-color: rgb(25, 25, 112);
+    height: 50px;
+    color: rgb(245, 199, 20);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.heading-website:hover {
+    cursor: pointer;
+}
+
+.sport-bar, .nutrition-bar, .about-bar, .mentalhealth-bar {
+    margin-top: 0;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.sport-bar:hover, .nutrition-bar:hover, .about-bar:hover, .mentalhealth-bar:hover {
+    cursor: pointer;
+    font-size: 28px;
+    background-color: rgb(50, 50, 150);
+}
+
+.sport-bar:active, .nutrition-bar:active, .about-bar:active, .mentalhealth-bar:active {
+    opacity: 0.4;
+}
+
+.pop_today {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-family: "Merriweather", sans-serif;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.articles-container {
+    display: inline-block;
+    margin-left: 10%;
+    background-color: rgb(235, 245, 235);
+    border-radius: 36px;
+    transition: 0.2s;
+    margin-top: 40px;
+}
+
+.articles-container:hover {
+    opacity: 0.7;
+}
+
+.img_art1 {
+    border-radius: 36px 36px 0 0;
+    width: 440px;
+}
+
+.heading_art1 {
+    font-size: 25px;
+    font-family: "Arial";
+    text-align: center;
+    max-width: 400px;
+    color: rgb(0, 0, 0);
+
+}
+
+.sub-heading_art1 {
+    font-size: 18px;
+    font-family: "Arial";
+    max-width: 380px;
+    text-align: center;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}

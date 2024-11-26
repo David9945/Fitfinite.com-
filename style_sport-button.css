@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.heading-website {
+    font-family: "Merriweather", sans-serif;
+    background-color: rgb(25, 25, 112);
+    height: 50px;
+    color: rgb(245, 199, 20);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.heading-website:hover {
+    cursor: pointer;
+}
+
+.sport-bar, .nutrition-bar, .about-bar, .mentalhealth-bar {
+    margin-top: 0;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Arial";
+    text-align: center;
+}
+
+.sport-bar:hover, .nutrition-bar:hover, .about-bar:hover, .mentalhealth-bar:hover {
+    cursor: pointer;
+    font-size: 28px;
+    background-color: rgb(50, 50, 150);
+}
+
+.sport-bar:active, .nutrition-bar:active, .about-bar:active, .mentalhealth-bar:active {
+    opacity: 0.4;
+}
+
+
+.image-container: {
+    display: flex;
+}
+
+.running, .cycling, .swimming {
+    width: 450px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 14%;
+    transition: 0.2s;
+}
+
+.running:hover, .swimming:hover, .cycling:hover {
+    opacity: 0.7;
+}
+
+
+
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(54, 69, 79);
+    color: rgb(255, 255, 255);
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Arial";
+    font-size: 10px;
+    margin-bottom: 0px;
+    position: absolute;
+    width: 100%
+}body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.heading-website {
+    font-family: "Merriweather", sans-serif;
+    background-color: rgb(25, 25, 112);
+    height: 50px;
+    color: rgb(245, 199, 20);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.heading-website:hover {
+    cursor: pointer;
+}
+
+.sport-bar, .nutrition-bar, .about-bar {
+    margin-top: 0;
+    display: flex;
+    width: 100px;
+    height: 50px;
+    border: none;
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+    justify-content: center;
+    text-decoration: none;
+    font-family: "Arial";
+}
+
+.sport-bar:hover, .nutrition-bar:hover, .about-bar:hover {
+    cursor: pointer;
+    font-size: 28px;
+    background-color: rgb(50, 50, 150);
+}
+
+.sport-bar:active, .nutrition-bar:active, .about-bar:active {
+    opacity: 0.4;
+}
+
+
+.image-container: {
+    display: flex;
+}
+
+.running, .cycling, .swimming {
+    width: 450px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 14%;
+    transition: 0.2s;
+}
+
+.running:hover, .swimming:hover, .cycling:hover {
+    opacity: 0.7;
+}
