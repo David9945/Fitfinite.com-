@@ -8,63 +8,173 @@ a {
     align-items: center;
 }
 
-.container {
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Arial";
+}
+
+nav {
+    background-color: rgb(25, 25, 112);
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 24px;
+    text-align: center;
+    height: 70px;
+    vertical-align: center;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    height: 70px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(245, 199, 20);
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
 }
 
 .heading-website {
     font-family: "Merriweather", sans-serif;
-    background-color: rgb(25, 25, 112);
-    height: 50px;
     color: rgb(245, 199, 20);
     font-size: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    vertical-align: top;
-    padding: 10px;
-}
-
-.heading-website:hover {
-    cursor: pointer;
-}
-
-.sport-bar, .nutrition-bar, .about-bar, .mentalhealth-bar {
-    margin-top: 0;
-    display: flex;
-    width: 100px;
-    height: 50px;
-    border: none;
-    background-color: rgb(25, 25, 112);
-    color: rgb(255, 255, 255);
-    font-size: 24px;
-    margin: 0;
-    padding: 10px;
-    transition: 0.1s ease-in-out;
-    justify-content: center;
-    text-decoration: none;
-    font-family: "Arial";
     text-align: center;
 }
 
-.sport-bar:hover, .nutrition-bar:hover, .about-bar:hover, .mentalhealth-bar:hover {
-    cursor: pointer;
-    font-size: 28px;
-    background-color: rgb(50, 50, 150);
+.sidebar li {
+    width: 100%
+    color: white;
+    margin: 0;
 }
 
-.sport-bar:active, .nutrition-bar:active, .about-bar:active, .mentalhealth-bar:active {
-    opacity: 0.4;
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+.NH {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    height: 34px;
+}
+
+@media (max-width: 1165px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        position: absolute;
+        left: 0;
+        transform: scale(1.4);
+    }
+
+    .heading-website {
+        position: relative;
+        right: 15px;
+    }
+
+    .li {
+        color: rgb(25, 25, 112);
+        margin-top: 15px;
+    }
+
+    .sidebar li:first-child a {
+        transform: scale(1.4);
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading-website {
+        font-size: 32px;
+        left: 25px;
+    }
+}
+
+@media (max-width: 356px) {
+    .heading-website {
+        font-size: 28px;
+        left: 40px;
+    }
+}
+
+@media (min-width: 505px) {
+    .login-button {
+        background-color: rgb(245, 199, 20);
+        color: rgb(25, 25, 112);
+        height: 50px;
+        width: 35px;
+        justify-content: center;
+        transition: 0.1s ease-in-out;
+        border-radius: 100px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 505px) {
+    .login-button {
+        background: none;
+    }
+}
+
+@media (max-width: 595px) {
+    .hideOnMobile2 {
+        display: none;
+    }
+}
+
+.login-button:hover {
+    transform: scale(1.1);
+    color: rgb(25, 25, 112);
 }
 
 .about-heading {
     font-family: "Merriweather", sans-serif;
     text-align: center;
     font-size: 48px;
+    margin-top: 100px;
 }
 
 .paragraph-container {
@@ -85,23 +195,58 @@ a {
     margin-top: 70px;
 }
 
-.paragraph2-container {
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    word-spacing: 5px;
-    letter-spacing: 1px;
-    display: block;
-    color: rgb(41, 41, 42);
+.form {
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    margin-left: calc(50% - 400px);
 }
 
-.problem1 {
-    font-size: 24px;
+.name, .email, .subject, .message {
+    border-radius: 50px;
+    border: 1px rgb(245, 199, 20) solid;
+    width: 200px;
+    height: 60px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.footer {
-    margin-top: 50px;
-    font-size: 16px;
-    margin-bottom: 50px;
+.message::placeholder {
+    padding-top: 20px;
+}
+
+.submit {
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 1px rgb(245, 199, 20) solid;
+    height: 40px;
+    width: 200px;
+    color: rgb(245, 199, 20);
+    background-color: rgb(25, 25, 112);
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.submit:hover {
+    background-color: rgb(245, 199, 20);
+    color: rgb(25, 25, 112);
+
+}
+
+.location {
+    width: 500px;
+    position: relative;
+    display: inline-block;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.contact {
+    background-color: rgb(25, 25, 112);
+    border-radius: 0px 20px 20px 0px;
 }
