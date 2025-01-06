@@ -15,31 +15,47 @@
 
 <link rel="stylesheet" type="text/css" href="style_about-button.css">
 
-<div class="container">
-    <a href="index.html" class="heading-website">
-      FITFINITE
-    </a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive bar</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+  <ul class="sidebar">
+    <li><a href="#" class="li" onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a><li>
+    <li><a href="plans-button.html" class="li">Health Plans</a></li>
+    <li><a href="nutrition-button.html" class="li">Nutrition</a></li>
+    <li><a href="mentalhealth-button.html" class="li">Mental Health</a></li>
+    <li><a href="about-button.html" class="li">About</a><li>
+    <li><a href="search-button.html" class="li">Search</a></li>
+  </ul>
 
-    <a href="sport-button.html" class="sport-bar">
-      Sport
-    </a>
+  <ul>
+    <li><a href="index.html" class="heading-website">FITFINITE</a></li>
+    <li class="hideOnMobile"><a href="plans-button.html">Health Plans</a></li>
+    <li class="hideOnMobile"><a href="nutrition-button.html">Nutrition</a></li>
+    <li class="hideOnMobile"><a href="mentalhealth-button.html">Mental Health</a></li>
+    <li class="hideOnMobile"><a href="about-button.html">About</a></li>
+    <li class="hideOnMobile"><h1 class="NH">|</h1></li>
+    <li><a href="login-button.html" class="login-button">Login</a></li>
+    <li><a href="search-button.html" class="hideOnMobile2"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff"><path d="M792-120.67 532.67-380q-30 25.33-69.64 39.67Q423.39-326 378.67-326q-108.44 0-183.56-75.17Q120-476.33 120-583.33t75.17-182.17q75.16-75.17 182.5-75.17 107.33 0 182.16 75.17 74.84 75.17 74.84 182.27 0 43.23-14 82.9-14 39.66-40.67 73l260 258.66-48 48Zm-414-272q79.17 0 134.58-55.83Q568-504.33 568-583.33q0-79-55.42-134.84Q457.17-774 378-774q-79.72 0-135.53 55.83-55.8 55.84-55.8 134.84t55.8 134.83q55.81 55.83 135.53 55.83Z"/></svg></a></li>
+    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+  </ul>
+</nav>
 
-    <a href="nutrition-button.html" class="nutrition-bar">
-      Nutrition
-    </a>
+<script src="navigation-bar.js"></script>
 
-    <a href="mentalhealth-button.html" class="mentalhealth-bar">
-      Mental Health
-    </a>
+</body>
+</html>
 
-  <a href="about-button.html" class="about-bar">
-    About
-  </a>
-</div>
-
-<h1 class="about-heading">
-  About Us
-</h1>
+<h1 class="about-heading">About Us</h1>
 
 <div class="paragraph-container">
   <p>Welcome to FitFinite, I am David Macaskill, the creator of this website.</p>
@@ -68,13 +84,18 @@
   Contact Us
 </h1>
 
-<div class="paragraph2-container">
-  <p class="problem1">
-    <u>Have an issue?</u>
-  </p>
-  Send A message to dmacaskill19@gmail.com telling us about your issue. Or <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox">Click Here</a>
-
-  <p class="footer">
-    If You have anything else you would like to make known, please contact dmacaskill19@gmail.com, we would really appreciate it!
-  </p>
+<div class="form">
+  <img src="location.jpg" class="location">
+  <div class="contact">
+    <form action="https://formsubmit.co/dmacaskill19@gmail.com" method="POST">
+      <input type="text" name="name" required placeholder="Name" class="name">
+      <input type="email" name="email" required placeholder="Email" class="email">
+      <input type="text" name="subject" required placeholder="Subject" class="subject">
+      <input type="hidden" name="_captcha" value="false">
+      <textarea name="message" required placeholder="Message" class="message"></textarea>
+      <button type="submit" class="submit">Submit</button>
+    </form>
+  </div>
 </div>
+
+<script src="navigation-bar.js"></script>
